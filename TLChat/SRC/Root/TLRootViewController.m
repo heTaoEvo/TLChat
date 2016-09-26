@@ -27,7 +27,7 @@ static TLRootViewController *rootVC = nil;
 @end
 
 @implementation TLRootViewController
-
+//单例创建根控制器
 + (TLRootViewController *) sharedRootViewController
 {
     static dispatch_once_t once;

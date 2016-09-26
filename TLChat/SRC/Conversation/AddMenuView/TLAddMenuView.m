@@ -107,6 +107,7 @@
 #pragma mark - Private Methods -
 - (void)drawRect:(CGRect)rect
 {
+#warning 绘制什么?
     CGFloat startX = self.width - 27;
     CGFloat startY = HEIGHT_STATUSBAR + HEIGHT_NAVBAR + 3;
     CGFloat endY = HEIGHT_STATUSBAR + HEIGHT_NAVBAR + 10;

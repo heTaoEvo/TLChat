@@ -87,6 +87,7 @@
 - (void)p_initUI
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    //单例
     TLRootViewController *rootVC = [TLRootViewController sharedRootViewController];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setRootViewController:rootVC];
@@ -121,6 +122,7 @@
     group.groupIconURL = [IEXPRESSION_HOST_URL stringByAppendingString:@"expre/downloadsuo.do?pId=10790"];
     group.groupInfo = @"婉转的骂人";
     group.groupDetailInfo = @"婉转的骂人表情，慎用";
+#warning 并不知道干什么的
     [proxy requestExpressionGroupDetailByGroupID:group.groupID pageIndex:1 success:^(id data) {
         group.data = data;
         [[TLExpressionHelper sharedHelper] downloadExpressionsWithGroupInfo:group progress:^(CGFloat progress) {

@@ -12,6 +12,6 @@
 
 @interface TLFriendSearchViewController : TLTableViewController <UISearchResultsUpdating>
 
-@property (nonatomic, strong) NSMutableArray *friendsData;
+@property (nonatomic, strong) NSMutableArray *friendsData;  
 
 @end

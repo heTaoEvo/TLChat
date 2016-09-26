@@ -14,7 +14,7 @@
 static UILabel *hLabel = nil;
 
 @implementation TLUIUtility
-
+//获取固定文字,字体,宽度对应的高
 + (CGFloat) getTextHeightOfText:(NSString *)text
                            font:(UIFont *)font
                           width:(CGFloat)width
