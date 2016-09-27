@@ -5,6 +5,7 @@
 //  Created by 李伯坤 on 16/1/23.
 //  Copyright © 2016年 李伯坤. All rights reserved.
 //
+//已简单浏览
 
 #import "TLConversationViewController.h"
 #import "TLConversationViewController+Delegate.h"
@@ -32,7 +33,7 @@
     [self p_initUI];        // 初始化界面UI
     [self registerCellClass];
     
-    [[TLMessageManager sharedInstance] setConversationDelegate:self];
+    [[TLMessageManager sharedInstance]  setConversationDelegate:self];
    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStatusChange:) name:AFNetworkingReachabilityDidChangeNotification object:nil];
 }
