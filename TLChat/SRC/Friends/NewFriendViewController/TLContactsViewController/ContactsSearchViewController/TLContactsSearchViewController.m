@@ -20,7 +20,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.data = [[NSMutableArray alloc] init];;
     [self.tableView registerClass:[TLContactCell class] forCellReuseIdentifier:@"TLContactCell"];
     [self setAutomaticallyAdjustsScrollViewInsets:NO];

@@ -23,7 +23,7 @@
     [self.tableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 60.0f)]];
     
     UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_camera"] style:UIBarButtonItemStylePlain actionBlick:^{
-        
+        NSLog(@"你好");
     }];
     [self.navigationItem setRightBarButtonItem:rightBarButton];
     
